@@ -1,0 +1,193 @@
+html,body{
+    /* padding: 0px; */
+    margin: 0px;
+    font-size: 12px;
+    font-family:  Helvetica;
+    background-color:rgb(230,230,230);
+}
+.header{
+    /* background-color: #f0f0f0; */
+    display: flex;
+    justify-content: space-between;
+    /* border:1px solid red; */
+    align-items: center;
+    /* padding: 10px; */
+    /* min-height: 60px; */
+}
+/* .menu{
+   
+} */
+.content{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-wrap:inherit;
+    flex: 1;  
+    /* border: 1px solid red; */
+}
+.header .logo{
+    text-align: center;
+}
+.fas,.far,.fa{
+    font-size:28px;
+    margin-right: 5px;
+}
+.far,.fa{
+    color: black;
+}
+.home-icon1{
+    color: white;
+}
+.teal{
+    background-color: rgb(25,57,72)!important;
+    border: none;
+    float: left;
+    /* padding: 2px 39px; */
+}
+.home, .teal{
+    padding: 2px 34px;
+}
+.home{
+    border: none;
+    float: left;
+    /* padding: 2px 39px; */
+    background-color: white; 
+}
+.home:hover{
+    background-color:#009688 !important;
+    /* color: white; */
+}
+.home-icon{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+.icon-p{
+    margin: 0px;
+}
+/*------------------ empieza primera vista  */
+.portafolio{
+    padding: 20px;
+}
+
+.rows{
+    display: flex;
+}
+.smart{
+width: 30%;
+text-align: center;
+padding: 20px;
+border-right: 1px solid rgb(166, 166, 166);
+}
+.smart-filt{
+    border-bottom: 1px solid rgb(166, 166, 166);
+}
+/* hr{
+    opacity: 0.3;
+} */
+/* .vl{
+    border-left: 1px solid green;
+    height: 500px;
+    margin-left: 150px;
+} */
+
+ /*---- contenido de la primera vista  */
+.add{
+    flex: 70%;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+.add-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.buscar{
+    padding: 10px;
+    border-radius: 4px;
+   text-align: center;
+    border: 0px;
+}
+.add-rows-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*------------------------- contenido de la segunda vista  */
+.add-rows-content{
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    /* padding: 20px; */
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/*------------------------- contenido de monday */
+.monday,.houston{
+    /* padding: 10px; */
+    border-right: 1px solid rgb(221, 221, 221);
+}
+/*------------- esto es de houston------ */
+.houston{
+    display: flex;
+    align-items: center;
+}
+ol{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+.fa-chevron-down{
+    color: rgb(234,167,93);
+    font-size: 24px;
+}
+
+/* -------------------- css del caro-------------- */
+.carro{
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+}
+/* .carro ol{
+    display: flex;
+    text-align: center;
+} */
+.button-li{
+    border: 0px;
+    background-color: red;
+    color: white;
+    padding: 10px
+}
+.fa-check-circle{
+    color: rgb(238,141,56);
+    font-size: 48px;
+}
+.color-letra-m{
+    color: rgb(159,159,159);
+    padding: 10px;
+}
+.color-letra,.fa-ellipsis-v{
+    color: rgb(159,159,159);
+    margin: 0px;
+}
+.fa-ellipsis-v{
+    padding: 10px;
+}
+
+.fa-truck{
+    font-size:48px;
+    color: rgb(159,159,159);
+    padding: 10px;
+}
+.color-letra-d{
+    color: rgb(159,159,159);
+    margin: 0px;
+    padding: 10px;
+    font-size: 20px !important;
+}
