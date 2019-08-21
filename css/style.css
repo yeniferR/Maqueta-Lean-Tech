@@ -26,7 +26,7 @@ html,body{
     align-items: inherit;
     flex-wrap:inherit;
     flex: 1;  
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .header .logo{
     text-align: center;
@@ -58,6 +58,10 @@ html,body{
 .menu :hover{
     /* background-color: teal; */
     color: teal;
+}
+.home-icon{
+    text-decoration: none;
+    color: black;
 }
 /* .home-icon1{
     color: white;
@@ -103,17 +107,88 @@ text-align: center;
 padding: 20px;
 border-right: 1px solid rgb(166, 166, 166);
 }
-.smart-filt{
+/* .smart-filt{
     border-bottom: 1px solid rgb(166, 166, 166);
-}
-hr{
-    opacity: 0.3;
-}
-/* .vl{
-    border-left: 1px solid green;
-    height: 500px;
-    margin-left: 150px;
 } */
+hr{
+    opacity: 0.2;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+    /* background-color: rgb(25,57,72); */
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .yenifer{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+  .delivered{
+    padding: 10px;
+    border-radius: 4px;
+   text-align: center;
+    border: 0px;
+    border: 1px solid rgb(204,204,204);
+    background-color: white;
+    cursor: pointer;
+}
 
  /*---- contenido de la primera vista  */
 .add{
@@ -133,8 +208,10 @@ hr{
    text-align: center;
     border: 0px;
     border: 1px solid rgb(204,204,204);
+    /* background-color: white; */
     /* color: rgb(159,159,159); */
 }
+
 .add-rows-one{
     display: flex;
     align-items: center;
@@ -158,6 +235,7 @@ hr{
 .add-rows-content{
     /* background-color: white; */
     border: 1px solid gray;
+    /* border:1px solid rgb(221, 221, 221); */
     border-radius: 24px;
     display: flex;
     /* padding: 20px; */
@@ -197,10 +275,12 @@ ol{
     display: flex;
     align-items: center;
 }
-/* .carro ol{
-    display: flex;
-    text-align: center;
-} */
+.closebtn{
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
 .button-li{
     border: 0px;
     background-color: red;
@@ -238,3 +318,5 @@ ol{
 .fa-ellipsis-v{
     font-size: 15px;
 }
+
+

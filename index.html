@@ -20,9 +20,12 @@
               <!-- <button class="teal"> -->
                 <ul>
                   <li>
-                      <a class="home-icon" href="#home"><i class='fas fa-home'></i></a>
-                      <br>
-                      <p class="icon-p">Home</p>
+                      <a class="home-icon" href="#home"><i class='fas fa-home'></i>
+                        <br>
+                        Home
+                      </a>
+                     
+                      <!-- <p class="icon-p">Home</p> -->
                   </li>
                     
                 </ul>
@@ -31,8 +34,11 @@
               <!-- <button class="home"> -->
                 <ul>
                   <li>
-                      <a class="home-icon" href="#home"><i class='far fa-envelope'></i></a>
-                      <p class="icon-p">Messages</p>
+                      <a class="home-icon" href="#home"><i class='far fa-envelope'></i>
+                        <br>
+                        Messages
+                      </a>
+                      <!-- <p class="icon-p">Messages</p> -->
                   </li>
                 </ul>
                  
@@ -40,8 +46,11 @@
               <!-- <button class="home"> -->
                 <ul>
                   <li>
-                      <a class="home-icon" href="#home"><i class="fa fa-star"></i></a>
-                      <p class="icon-p">Wishlist</p>
+                      <a class="home-icon" href="#home"><i class="fa fa-star"></i>
+                        <br>
+                        Wishlist
+                      </a>
+                      <!-- <p class="icon-p">Wishlist</p> -->
                   </li>
                 </ul>
                   
@@ -49,8 +58,11 @@
               <!-- <button class="home"> -->
                 <ul>
                   <li>
-                      <a class="home-icon" href="#home"><i class="fa fa-cog"></i></a>
-                      <p class="icon-p">Settings</p>
+                      <a class="home-icon" href="#home"><i class="fa fa-cog"></i>
+                      <br>
+                      Settings
+                    </a>
+                      <!-- <p class="icon-p">Settings</p> -->
                   </li>
                 </ul>
                   
@@ -58,8 +70,11 @@
               <!-- <button class="home"> -->
                 <ul>
                   <li class="Account">
-                      <a class="home-icon" href="#home"><i class='far fa-user'></i></a>
-                      <p class="icon-p">My Account</p>
+                      <a class="home-icon" href="#home"><i class='far fa-user'></i>
+                        <br>
+                        My Account
+                      </a>
+                      <!-- <p class="icon-p">My Account</p> -->
                   </li>
                 </ul>
                   
@@ -74,13 +89,43 @@
       <div class="rows">
         <div class="smart">
           <p class="smart-filt">Smart Filters</p>
-          <!-- <hr> -->
-          <p>holas</p>
-          <p>holas</p>
-          <p>holas</p>
-          <p>holas</p>
-          <div class="vl"></div>
-        </div>
+          <hr>
+          <div class="yenifer">
+              <i class='fas fa-certificate' style='font-size:40px'></i>
+              
+             
+              <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                  </label>
+          </div>
+          <div class="yenifer">
+      
+              <i class="fa fa-calendar-check-o" style="font-size:40px"></i>
+               
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                    </label>
+            </div>
+            <div class="yenifer">
+      
+                <i class='far fa-heart' style='font-size:40px'></i>
+             
+              <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                  </label>
+          </div>
+          <hr>
+          <p>Status</p>
+          <!-- <div class="icon-buscar">
+              <i class='fab fa-sistrix'></i>
+              <input class="buscar" type="text" placeholder="Search"> 
+          </div>  -->
+          <br>
+          <input class="delivered" type="button" value="DELIVERED">
+          </div>
 <!-- empieza la segunda vista -->
         <div class="add">
           <div class="add-search">
@@ -124,8 +169,10 @@
                       <div><p class="color-letra-d">$250.00</p></div>
                       <div><button class="button-li">1</button></div>
                       <div><i class='fas fa-ellipsis-v'></i></div>
+                      
                   </div>
               </div>  
+              <span class="closebtn">&times;</span> 
 
           </div>
           <!-- empieza 3 div -->
@@ -161,10 +208,10 @@
                       <div><button class="button-li">1</button></div>
                       <div><i class='fas fa-ellipsis-v'></i></div>
                   </div>
-              </div>  
-
+                  
+              </div> 
+              <span class="closebtn">&times;</span>  
           </div>
-
           <!-- empieza 4 div -->
 
           <div class="add-rows-one">
@@ -200,6 +247,7 @@
                       <div><i class='fas fa-ellipsis-v'></i></div>
                   </div>
               </div>  
+              <span class="closebtn">&times;</span> 
 
           </div>
 
@@ -209,5 +257,18 @@
       </div>
     </div>
   </section> 
+  <script>
+      var close = document.getElementsByClassName("closebtn");
+      var i;
+      
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function(){
+          var div = this.parentElement;
+          div.style.opacity = "0";
+          setTimeout(function(){ div.style.display = "none"; }, 600);
+        }
+      }
+
+      </script>
 </body>
 </html>
