@@ -11,7 +11,7 @@ html,body{
     justify-content: space-between;
     /* border:1px solid red; */
     align-items: center;
-    /* padding: 10px; */
+    padding: 20px;
     /* min-height: 60px; */
 }
 /* .menu{
@@ -29,6 +29,7 @@ html,body{
 }
 .header .logo{
     text-align: center;
+    padding-left: 80px;
 }
 .fas,.far,.fa{
     font-size:28px;
@@ -37,9 +38,30 @@ html,body{
 .far,.fa{
     color: black;
 }
-.home-icon1{
+.menu{
+    display: flex;
+    padding: 20px;
+    
+}
+.menu ul{
+    list-style-type: none;
+    background-color: white;
+   
+}
+.menu ul li{
+    text-align: center;
+}
+/* .menu ul .Account{
+    padding-right: 30px;
+} */
+
+.menu :hover{
+    background-color: teal;
     color: white;
 }
+/* .home-icon1{
+    color: white;
+} */
 .teal{
     background-color: rgb(25,57,72)!important;
     border: none;
