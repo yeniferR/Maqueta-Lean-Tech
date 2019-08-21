@@ -103,29 +103,45 @@ border-right: 1px solid rgb(166, 166, 166);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .buscar{
     padding: 10px;
     border-radius: 4px;
    text-align: center;
     border: 0px;
+    border: 1px solid rgb(204,204,204);
+    /* color: rgb(159,159,159); */
 }
 .add-rows-one{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.icon-buscar{
+    position: relative;
+}
+
+.fa-sistrix{
+    position: absolute;
+    padding: 10px;
+    left: 0px;
+    margin-left: 45px;
+    color: rgb(159,159,159);
+    font-size: 18px;
+    
+}
 /*------------------------- contenido de la segunda vista  */
 .add-rows-content{
     background-color: white;
-    border-radius: 16px;
+    border-radius: 24px;
     display: flex;
     /* padding: 20px; */
-    width: 80%;
+    width: 85%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 /*------------------------- contenido de monday */
 .monday,.houston{
@@ -136,6 +152,7 @@ border-right: 1px solid rgb(166, 166, 166);
 .houston{
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 ol{
     list-style-type: none;
@@ -146,6 +163,9 @@ ol{
 .fa-chevron-down{
     color: rgb(234,167,93);
     font-size: 24px;
+}
+.fa-location-arrow{
+    color: rgb(159,159,159);
 }
 
 /* -------------------- css del caro-------------- */
@@ -162,7 +182,8 @@ ol{
     border: 0px;
     background-color: red;
     color: white;
-    padding: 10px
+    padding: 10px;
+    border-radius: 4px;
 }
 .fa-check-circle{
     color: rgb(238,141,56);
@@ -190,4 +211,7 @@ ol{
     margin: 0px;
     padding: 10px;
     font-size: 20px !important;
+}
+.fa-ellipsis-v{
+    font-size: 15px;
 }
