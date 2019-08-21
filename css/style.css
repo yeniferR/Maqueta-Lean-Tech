@@ -3,7 +3,8 @@ html,body{
     margin: 0px;
     font-size: 12px;
     font-family:  Helvetica;
-    background-color:rgb(230,230,230);
+    /* background-color:rgb(230,230,230); */
+    background-color: white;
 }
 .header{
     /* background-color: #f0f0f0; */
@@ -25,7 +26,7 @@ html,body{
     align-items: inherit;
     flex-wrap:inherit;
     flex: 1;  
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .header .logo{
     text-align: center;
@@ -34,10 +35,9 @@ html,body{
 .fas,.far,.fa{
     font-size:28px;
     margin-right: 5px;
-}
-.far,.fa{
     color: black;
 }
+
 .menu{
     display: flex;
     padding: 20px;
@@ -56,39 +56,39 @@ html,body{
 } */
 
 .menu :hover{
-    background-color: teal;
-    color: white;
+    /* background-color: teal; */
+    color: teal;
 }
 /* .home-icon1{
     color: white;
 } */
-.teal{
+/* .teal{
     background-color: rgb(25,57,72)!important;
     border: none;
-    float: left;
+    float: left; */
     /* padding: 2px 39px; */
-}
-.home, .teal{
+/* } */
+/* .home, .teal{
     padding: 2px 34px;
-}
-.home{
+} */
+/* .home{
     border: none;
-    float: left;
+    float: left; */
     /* padding: 2px 39px; */
-    background-color: white; 
-}
-.home:hover{
-    background-color:#009688 !important;
+    /* background-color: white; 
+} */
+/* .home:hover{
+    background-color:#009688 !important; */
     /* color: white; */
-}
-.home-icon{
+/* } */
+/* .home-icon{
     text-decoration: none;
     color: black;
     margin: 5px;
 }
 .icon-p{
     margin: 0px;
-}
+} */
 /*------------------ empieza primera vista  */
 .portafolio{
     padding: 20px;
@@ -156,7 +156,8 @@ hr{
 }
 /*------------------------- contenido de la segunda vista  */
 .add-rows-content{
-    background-color: white;
+    /* background-color: white; */
+    border: 1px solid gray;
     border-radius: 24px;
     display: flex;
     /* padding: 20px; */
@@ -212,11 +213,11 @@ ol{
     font-size: 48px;
 }
 .color-letra-m{
-    color: rgb(159,159,159);
+    /* color: rgb(159,159,159); */
     padding: 10px;
 }
 .color-letra,.fa-ellipsis-v{
-    color: rgb(159,159,159);
+    /* color: rgb(159,159,159); */
     margin: 0px;
 }
 .fa-ellipsis-v{
@@ -229,7 +230,7 @@ ol{
     padding: 10px;
 }
 .color-letra-d{
-    color: rgb(159,159,159);
+    /* color: rgb(159,159,159); */
     margin: 0px;
     padding: 10px;
     font-size: 20px !important;
