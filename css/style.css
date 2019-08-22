@@ -318,5 +318,55 @@ ol{
 .fa-ellipsis-v{
     font-size: 15px;
 }
+@media screen and (max-width: 767px){
+     body{
+         border: 1px solid red;
+
+    }
+ .smart{
+     display: none;
+ }
+ .add{
+     flex:0px;
+     padding: 0px;
+     text-align: center;
+ }
+ .add-search{
+     display: inherit;
+     
+ }
+ .fa-check-circle{
+     display: none;
+ }
+ .menu{
+     padding: 0px;
+ }
+ .menu ul{
+     padding: 5px;
+     
+ }
+ .header .logo{
+     padding: 0px;
+     margin: 0px;
+ }
+ .color-letra-m,
+ .portafolio,
+ .houston,
+ .fa-truck{
+     padding: 0px;
+ }
+.icon-buscar{
+    text-align: center;
+}
+ .fa-sistrix{
+     margin-left: 120px;
+ }
+ .closebtn{
+     margin-bottom: 45px;
+     font-size: 24px;
+     margin-right: 10px;
+
+ }
+}
 
 
