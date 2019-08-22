@@ -194,6 +194,7 @@ hr{
 .add{
     flex: 70%;
     padding: 20px;
+    position: relative;
     /* border: 1px solid red; */
 }
 .add-search{
@@ -317,6 +318,11 @@ ol{
 }
 .fa-ellipsis-v{
     font-size: 15px;
+}
+.fa-plus-circle{
+    position: absolute;
+    right: 0px;
+    font-size: 48px;
 }
 @media screen and (max-width: 767px){
      body{
