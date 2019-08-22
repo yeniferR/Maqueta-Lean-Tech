@@ -320,7 +320,7 @@ ol{
 }
 @media screen and (max-width: 767px){
      body{
-         border: 1px solid red;
+         /* border: 1px solid red; */
 
     }
  .smart{
