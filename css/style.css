@@ -188,6 +188,8 @@ hr{
     border: 1px solid rgb(204,204,204);
     background-color: white;
     cursor: pointer;
+    width: 190px;
+    height: 35px;
 }
 
  /*---- contenido de la primera vista  */
@@ -280,6 +282,7 @@ ol{
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 24px;
 }
 
 .button-li{
@@ -355,6 +358,7 @@ ol{
      padding: 0px;
      margin: 0px;
  }
+
  .color-letra-m,
  .portafolio,
  .houston,
@@ -373,6 +377,7 @@ ol{
      margin-right: 10px;
 
  }
-}
+ 
+} 
 
 
