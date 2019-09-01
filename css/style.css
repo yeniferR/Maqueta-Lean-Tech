@@ -1,13 +1,11 @@
 html,body{
-    /* padding: 0px; */
     margin: 0px;
     font-size: 12px;
     font-family:  Helvetica;
-    /* background-color:rgb(230,230,230); */
-    background-color: white;
+    
 }
 .header{
-    /* background-color: #f0f0f0; */
+  
     display: flex;
     justify-content: space-between;
     /* border:1px solid red; */
@@ -63,36 +61,7 @@ html,body{
     text-decoration: none;
     color: black;
 }
-/* .home-icon1{
-    color: white;
-} */
-/* .teal{
-    background-color: rgb(25,57,72)!important;
-    border: none;
-    float: left; */
-    /* padding: 2px 39px; */
-/* } */
-/* .home, .teal{
-    padding: 2px 34px;
-} */
-/* .home{
-    border: none;
-    float: left; */
-    /* padding: 2px 39px; */
-    /* background-color: white; 
-} */
-/* .home:hover{
-    background-color:#009688 !important; */
-    /* color: white; */
-/* } */
-/* .home-icon{
-    text-decoration: none;
-    color: black;
-    margin: 5px;
-}
-.icon-p{
-    margin: 0px;
-} */
+
 /*------------------ empieza primera vista  */
 .portafolio{
     padding: 20px;
@@ -332,14 +301,13 @@ ol{
 }
 .fa-plus-circle{
     position: absolute;
-    right: 0px;
+    right: 50px;
+    /* bottom: 20px; */
     font-size: 48px;
+    color: rgb(238,141,56);
 }
 @media screen and (max-width: 767px){
-     body{
-         /* border: 1px solid red; */
-
-    }
+     
  .smart{
      display: none;
  }
@@ -482,7 +450,7 @@ ol{
   }
   .login{
       color: white;
-      background-color: #4CAF50;
+      background-color: #00A1C0;
       border: none;
       padding: 14px 20px;
       margin: 8px 0px;

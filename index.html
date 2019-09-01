@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/angular.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mockup</title>
 </head>
-<body>
+<body ng-app="app" ng-controller="controlador">
   <header class="header">
       <div class="content">
           <figure class="logo">
@@ -121,7 +121,7 @@
           <p>Status</p>
           <div class="icon-buscar">
               <i class='fab fa-sistrix'></i>
-              <input class="buscar" type="text" placeholder="Search"> 
+              <input class="buscar" type="text" placeholder="Search" ng-model="buscarS"> 
           </div> 
           <br>
           <input class="delivered" type="button" value="DELIVERED">
@@ -134,7 +134,7 @@
             </div>
             <div class="icon-buscar">
                 <i class='fab fa-sistrix'></i>
-                <input class="buscar" type="text" placeholder="Search"> 
+                <input class="buscar" type="text" placeholder="Search" ng-model="buscar"> 
             </div>  
           </div>
           <!--  empieza 2 div -->
@@ -171,14 +171,9 @@
                       <div><i class='fas fa-ellipsis-v'></i></div>
                   </div>
               </div>  
-              <span class="closebtn">&times;</span> 
+              <span cerrar-div  class="closebtn">&times;</span> 
 
-          </div>
-          <div class=" producto">
-              <p class="producto-Info">
-                  Para beneficiarte de Envío GRATIS en este pedido, añade EUR 24,24 en productos elegibles. Ver detalles.</p>
-            </div>
-          
+          </div>  
           <!-- empieza 3 div -->
           <div class="add-rows-one">
               <div>
@@ -214,7 +209,7 @@
                   </div>
                   
               </div> 
-              <span class="closebtn">&times;</span>  
+              <span cerrar-div  class="closebtn">&times;</span>  
           </div>
           <!-- empieza 4 div -->
 
@@ -251,18 +246,13 @@
                       <div><i class='fas fa-ellipsis-v'></i></div>
                   </div>
               </div>  
-              <span class="closebtn">&times;</span> 
+              <span cerrar-div class="closebtn">&times;</span> 
 
           </div>
-          <span id="demo" ></span>
-          <span id="demo1" ></span>
-          <span id="demo2" ></span>
-         
-          <i class='fas fa-plus-circle' id="lejos"></i>
-          
-
-
-
+          <div id="demo">
+          </div>
+          <i agregar-datos class='fas fa-plus-circle'></i>
+    
         </div>
       </div>
     </div>
@@ -278,10 +268,10 @@
         </div>
         <div class="container">
           <label><b>Nombre</b></label>
-          <input class="textNP" type="text" placeholder="Enter Username" name="uname" required>
+          <input class="textNP" type="text" placeholder="Enter Username" name="uname" ng-model="uname"required>
 
           <label><b>Contraseña</b></label>
-          <input class="textNP" type="text" placeholder="Enter Password"  name="psw" required>
+          <input class="textNP" type="text" placeholder="Enter Password"  name="psw" ng-model="psw" required>
           <button class="login" type="submit">Login</button>
           <label>
               <input type="checkbox" checked="checked" name="remember" > Recordarme
@@ -290,7 +280,7 @@
         
         <div class="container" style="background-color:#f1f1f1">
           <button class="cancelbtn" onclick="document.getElementById('registro').style.display='none'">Cancelar</button>
-          <span class="psw">olvidaste la contraseña</span>
+          
 
         </div>
       </form>
@@ -301,54 +291,48 @@
 
   <script>
     
-      var close = document.getElementsByClassName("closebtn");
-      var i;
-      
-      for (i = 0; i < close.length; i++) {
-        close[i].onclick = function(){
-          var div = this.parentElement;
-          div.style.opacity = "0";
-          setTimeout(function(){ div.style.display = "none"; }, 600);
-        }
+angular.module('app',[])
+var app = angular.module('app')
+
+app.controller('controlador',function($scope){
+   $scope.console = function(){
+   }
+})
+
+app.directive("cerrarDiv", function($compile){
+ return function(scope, element, attrs){
+ element.bind("click", function(){
+  var div = this.parentElement;
+  div.style.opacity = "0";
+  setTimeout(function(){ div.style.display = "none"; }, 600);
+
+ });
+ };
+});
+ 
+
+app.directive("agregarDatos", function($compile){
+ return function(scope, element, attrs){
+ element.bind("click", function(){
+ angular.element(document.getElementById('demo')).append($compile("<div class='add-rows-one'><div><i class='fa fa-check-circle'></i></div><div class='add-rows-content'><div class='monday'><p class='color-letra-m'>Monday 10 2:26 pm</p></div><div class='houston'><div><i class='fas fa-location-arrow' style='font-size:24px'></i></div><ol><li><p class='color-letra'>Houston, TX, 33619</p></li><li><i class='fas fa-chevron-down'></i></li><li><p class='color-letra'>Atlanta, GA, 30123</p></li></ol></div><div class='carro'><div><i class='fa fa-truck'></i></div><div><p class='color-letra-d'>$250.00</p></div><div><button class='button-li'>1</button></div><div><i class='fas fa-ellipsis-v'></i></div></div></div><span cerrar-div  class='closebtn'>&times;</span> </div>")(scope));
+ });
+ };
+});
+
+app.directive('doAutoClick',['$timeout',
+  function($timeout) {
+    return {
+      restrict: 'A',
+      priority: -1,
+      link: function($scope, iElm, iAttrs, controller) {
+        
+        $timeout(function(){
+          iElm.triggerHandler('click'); 
+        },500)  
       }
-
-// document.getElementById("lejos").addEventListener("click",prueba);
-// function prueba(){
-//      this.x = document.querySelectorAll("div.add-rows-one");
-//      for (let index = 0; index < this.x.length; index++) { 
-//       document.getElementById("demo").innerHTML = this.x[index].innerHTML;
-//       document.getElementById("demo1").innerHTML = this.x[index].innerHTML;
-//       document.getElementById("demo2").innerHTML = this.x[index].innerHTML;
-       
-//      }  
-// }   
-
-//      var clase = document.getElementsByClassName("add-rows-one")
-// var i;
-
-// for (i = 0; i < clase.length; i++) {
-//   clase[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// }
-
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
+    };
+  }
+]);
       
  </script>
 </body>
